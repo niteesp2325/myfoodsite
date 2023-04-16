@@ -1,0 +1,298 @@
+/*rest css*/
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+html{
+    scroll-behavior:smooth;
+}
+/*css variables*/
+:root{
+    --navbar-height:59px;
+
+}
+
+
+
+
+
+
+
+/* navigation bar :logo and image*/
+#logo{
+    margin:  10px 34px;
+   
+}
+#logo img{
+      
+        margin:3px 6px;
+        height: 80px;
+        width: 80px;
+        border-radius:10000px;
+
+        
+}
+
+
+
+/*navbar*/
+#navbar{
+   /* border: 4px solid rebeccapurple;
+   height: 150px;*/
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    
+}
+ 
+#navbar::before{
+    content: "";
+    background-color: rgb(2, 61, 19);
+    position:absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+ #navbar ul li a{
+    color: rgb(33, 8, 220);
+    display:block;
+    padding: 6px 32px;
+    text-decoration:none;
+    border-radius: 20px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    border-radius:20px;
+    
+
+
+}
+#navbar ul li a:hover{
+    color:rgb(10, 6, 2);
+    background-color: rgb(201, 220, 107);
+    
+} 
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+/*home*/
+
+#home{
+   
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:550px;
+    justify-content:center ;
+    align-items:center;
+    /*color: rgb(218, 192, 181);
+    margin-bottom:0px;
+   border:2px solid greenyellow;*/
+}
+#home::before{
+   /* content: "";
+    position: absolute;
+    background-image:url('https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.98; */
+    content: "";
+    background-color: rgb(9, 1, 1);
+    position:absolute;
+    top:0px;
+    left: 0px;
+    background:url('https://images.pexels.com/photos/2103949/pexels-photo-2103949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')no-repeat center center/cover ;
+   /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;   
+    
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Baloo Bhaina 2', cursive;
+    /*margin:20px;*/
+}
+#home p{
+    color:rgb(1, 22, 5);
+    text-align: center;
+font-size:1.rem;
+font-family: 'Bree Serif', serif;
+}
+/*services section*/
+#services
+{
+   /* border:2px solid black;*/
+    margin:34px;  
+    display: flex;
+
+
+}
+
+#services .box{
+    border: 2px solid rgb(223, 10, 10);
+    background-color: rgb(174, 223, 223);
+    
+    padding: 34px;
+    margin: 2px 55px;
+    margin-bottom: 20px;
+    border-radius: 28px;
+    
+}
+#services .box img{
+    height:160px;
+    width: 160px;
+    border-radius: 600px;
+     display: block;
+     margin:auto;
+
+}
+#servises .box p{
+     font-family:'Bree Serif',serif;
+}
+
+/* clients section */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   /* border: 5px solid rgb(11, 228, 44);*/
+    
+}
+#client-section{
+   
+    position: relative;
+}
+#client-section h1{
+    text-align: center;
+    color: rgb(117, 2, 2);
+}
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url("https://images.pexels.com/photos/1247677/pexels-photo-1247677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+    
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.3;
+}
+#clients img{
+    height:124px;
+    /*width:130px;
+    
+    border-radius: 12px;
+    
+    opacity:0.9;
+    padding-top: 22px;*/
+}
+.client-item{
+    padding: 34px;
+}
+/* contact section*/
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.7;
+     margin-top: 10px;
+    background: url("https://img.freepik.com/free-photo/food-with-ingredients_1220-4884.jpg?w=740&t=st=1676915005~exp=1676915605~hmac=e734805b12a8b80d2cad5c78fec66930c326d5a8366c5cf77fd366aff0254d07") no-repeat center center/cover;
+    
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius:9px ;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+font-family: 'Baloo Bhaina 2', cursive;
+    
+}
+
+
+
+footer{
+     background:black;
+     color: antiquewhite;
+     padding: 9px 20px;
+
+}
+
+/*utiliti classess*/
+.h-primary{
+    font-size:3.8rem;
+    font-family: 'Bree Serif', serif;
+    color: rgb(244, 6, 6);
+    padding: 12px;
+    
+    
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid rgb(197, 94, 220);
+    background-color: rgb(139, 124, 222);
+    color: rgb(5, 5, 14);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin: 17px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    cursor:pointer;
+    
+}
+.center{
+    text-align:center;
+    
+}
+.h-secondry{
+    font-size:3.8rem;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+    
+}
+
+
+
+
+
